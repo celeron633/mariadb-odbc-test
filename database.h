@@ -9,7 +9,7 @@ void InitDatabase();
 void DeInitDatabase();
 int ConnectDataBase();
 
-int IsDatabaseConnected();
+int CheckDatabaseConnection();
 SQLHDBC GetHDBC(void);
 
 #endif

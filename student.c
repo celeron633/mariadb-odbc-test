@@ -6,8 +6,8 @@
 
 int QueryAllStudents(void)
 {
-    if (!IsDatabaseConnected()) {
-        printf("数据库未连接!");
+    if (CheckDatabaseConnection() < 0) {
+        printf("数据库未连接!\r\n");
         return -1;
     }
 
